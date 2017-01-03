@@ -17,12 +17,7 @@ setup(name='lspython',
       ],
       entry_points = {
           'console_scripts': [
-              'git_checkout_radar=radarcltools.command_line:git_checkout_radar',
-              'git_branch_radar=radarcltools.command_line:git_branch_radar',
-              'create_phab_branch=radarcltools.command_line:create_phab_branch',
-              'edit_radar=radarcltools.command_line:edit_radar',
-              'get_assigned_radars=radarcltools.command_line:get_assigned_radars',
-              'setup_background_refresh=radarcltools.command_line:setup_background_refresh',
+              'lspython=lspython.lspython:lspython'
           ],
       },
       zip_safe=False)

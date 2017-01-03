@@ -25,7 +25,6 @@ def has_colors(stream):
     except:
         return False
 
-
 def get_mode_info(mode, name):
     perms = "-"
     color = "default"
@@ -59,7 +58,6 @@ def get_mode_info(mode, name):
                 perms = perms + "-"
 
     return (perms, color, link)
-
 
 def lspython():
     table = PrettyTable(["Permissions", "# Links", "Owner", "Size", "Last Mod", "Name"])
@@ -125,7 +123,6 @@ def lspython():
     table.align["Last Mod"] = 'l'
     table.align["Name"] = 'l'
     print table
-
 
 if __name__ == '__main__':
     lspython()
