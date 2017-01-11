@@ -25,7 +25,7 @@ def has_colors(stream):
     except:
         return False
 
-def get_mode_info(mode, name):
+def get_mode_info(mode, filename):
     perms = "-"
     color = "default"
     link = ""
@@ -43,7 +43,7 @@ def get_mode_info(mode, name):
         if mode & (stat.S_IXGRP | stat.S_IXUSR | stat.S_IXOTH):
             color = "green"
         else:
-            if name[0] == '.':
+            if filename[0] == '.':
                 color = "gray"
             else:
                 color = "white"
